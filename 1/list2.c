@@ -67,7 +67,7 @@ void list_print(List *ls)
     /* 適切に記述しなさい */
     Cell *p = ls->top->next;
     while (p != NULL) {
-	     printf("%s %d\n", p->name, p->weight);
+	     printf("%s 1\n", p->word);
 	     p = p->next;
     }
 }
@@ -78,7 +78,7 @@ Cell *list_find(List *ls, char *word)
     /* 適切に記述しなさい */
     Cell *p = ls->top->next;
     while (p != NULL) {
-	     if (strcmp(p->name, name) == 0) {
+	     if (strcmp(p->word, word) == 0) {
 	        return p; /* 見つかった */
 	       }
 	     p = p->next;
@@ -103,11 +103,12 @@ int main(void)
 	/* 見つかれば，そのセルの出現回数を1増やす */
 	/* 見つからなければ，リストに新しいセルを追加する */
 
+    list_insert(ls,c,MAXWORD);
 
     }
 
     /* リストを出力する */
-
+    list_print(ls);
 
 
 
