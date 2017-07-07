@@ -57,6 +57,7 @@ public class Point {
 	Point p0 = new Point();  // 原点
 	Point p1 = new Point(1.0, 1.0);
 	Point p2 = new Point(-2.5, -4.3);
+  Point p3 = new Point(1.234, -9.876);
 
 	System.out.print("p0 = ");
 	p0.print();
@@ -70,10 +71,14 @@ public class Point {
 	p2.print();
 	System.out.println();
 
+  System.out.print("p3 = ");
+	p3.print();
+	System.out.println();
+
 	System.out.print("p1の原点からの距離(getLength()): ");
 	System.out.println(p1.getLength());
 
-	System.out.print("p1の原点からの距離(getLength(p0)): ");
+	System.out.print("p1のp0からの距離(getLength(p0)): ");
 	System.out.println(p1.getLength(p0));
 
 	System.out.print("p2の原点からの距離(getLength()): ");
@@ -81,6 +86,16 @@ public class Point {
 
 	System.out.print("p1とp2の距離: ");
 	System.out.println(p1.getLength(p2));
+
+	System.out.print("p3の原点からの距離(getLength()): ");
+	System.out.println(p3.getLength());
+
+	System.out.print("p3とp1の距離: ");
+	System.out.println(p3.getLength(p1));
+
+  System.out.print("p2とp3の距離: ");
+	System.out.println(p2.getLength(p3));
+
     }
 
 }
