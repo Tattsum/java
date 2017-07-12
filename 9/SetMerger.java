@@ -1,4 +1,4 @@
-public class IntMerger {
+public class SetMerger {
 
     /**
      *  IntListで表された集合aにIntListで表された集合bの要素を加える
