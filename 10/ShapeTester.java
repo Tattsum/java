@@ -15,6 +15,6 @@ public class ShapeTester {
 
         Shape s2 = c;
         info(s2);
-        System.out.println("s2の円周 = " + s2.getLength());
+        System.out.println("s2の円周 = " + c.getLength());
     }
 }
