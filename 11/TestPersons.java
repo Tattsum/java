@@ -11,9 +11,8 @@ public class TestPersons {
 
         Person p = ichiro;
         p.hello();
-        p.thanks();
         p.bye();
 
-        SalesPerson sp = taro;
+        SalesPerson sp = ichiro;
     }
 }
